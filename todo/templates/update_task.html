@@ -1,0 +1,15 @@
+<form method="post">
+    {% csrf_token %}
+
+    <input type="text" name="title" value="{{ task.title }}" class="form-control mb-2">
+
+    <textarea name="description" class="form-control mb-2">{{ task.description }}</textarea>
+
+    <select name="status" class="form-control mb-2">
+        <option value="Pending">Pending</option>
+        <option value="Progress">Progress</option>
+        <option value="Done">Done</option>
+    </select>
+
+    <button class="btn btn-warning">Update</button>
+</form>

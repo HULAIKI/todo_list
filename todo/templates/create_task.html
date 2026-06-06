@@ -1,0 +1,9 @@
+<form method="post">
+    {% csrf_token %}
+
+    <input type="text" name="title" class="form-control mb-2" placeholder="Judul">
+
+    <textarea name="description" class="form-control mb-2" placeholder="Deskripsi"></textarea>
+
+    <button class="btn btn-success">Simpan</button>
+</form>

@@ -1,0 +1,8 @@
+<form method="post">
+    {% csrf_token %}
+
+    <p>Yakin mau hapus "{{ task.title }}"?</p>
+
+    <button class="btn btn-danger">Hapus</button>
+    <a href="/" class="btn btn-secondary">Batal</a>
+</form>
